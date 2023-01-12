@@ -1,0 +1,130 @@
+:root{
+    --light-grey: #f5f5f5;
+    --white: #ffffff;
+    --orange: #fc9905;
+    --violet: #4d099e;
+    --blue: #154abd;
+    --pink: #feddddf1;
+    --red: #c41616;
+}
+header{
+    display: flex;
+    align-items: center;
+    max-height: fit-content;
+    min-height: 5rem;
+    justify-content: space-around;
+    position: sticky;
+}
+#logo{
+    height: 7rem;
+    width: 20rem;
+    object-fit: cover;
+    object-position: 15% 49%;
+}
+nav{
+    display: inline !important;
+}
+nav>a{
+    text-decoration: none;
+    padding: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* icons */
+.glyphicon{
+    border: 3px solid;
+    border-radius: 5rem;
+    padding: 1.7rem;
+    font-size: 3rem;
+}
+.glyphicon-file{
+    color: var(--orange)
+}
+.glyphicon-play-circle, .glyphicon-check{
+    color: var(--blue);
+}
+.glyphicon-paperclip{
+    color: var(--violet);
+}
+.glyphicon-plane{
+    border: none;
+}
+/* body  */
+main{
+    background-color: var(--light-grey) !important;
+    font-size: 14px;
+}
+.students-info, .study-subjects, .gradebook, .attendance, .career-prep{
+    border: 1px solid black;
+    background-color: var(--white) ;
+}
+.students-info{
+    margin: 1rem 1.5rem;
+}
+.study-subjects{
+    margin: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.gradebook{
+    text-align: center;
+    margin: 1rem;
+}
+.gradebook > div, .attendance{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 1.5rem;
+}
+.attendance{
+    text-align: left;
+}
+.red{
+    color: var(--red);
+}
+.career-prep{
+    background-color: var(--pink);
+    margin: 1rem 1.5rem;
+}
+.career-prep > div:first-child{
+    display: flex;
+    align-items: center;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+/* progress */
+/* For Chrome or Safari */
+progress::-webkit-progress-bar {
+    background-color: #eeeeee;
+}
+
+progress::-webkit-progress-value {
+    background-color: #039603 !important;
+}
+
+
+/* For Firefox */
+progress {
+    background-color: var(--red);
+}
+progress::-webkit-progress-value{
+    background-color: var(--red);
+}
+progress::-moz-progress-bar {
+    background-color: var(--red) !important;
+}
+
+/* For IE10 */
+progress {
+    background-color: var(--red);
+    width: 100%;
+}
+
+progress {
+    background-color: var(--red);
+}
+footer{
+    text-align: center;
+}
