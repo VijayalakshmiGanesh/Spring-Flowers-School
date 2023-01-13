@@ -25,7 +25,7 @@
     <main>
     <div class="container">
         <div class="row">
-        <div class="students-info col-sm-3 col-md-6">
+        <div class="students-info col-sm-4 col-md-7 col-lg-7">
             <h3>Welcome back Vijayalakshmi Ganesh, Continue learning</h3>
             <div class="class-info">
                 <p>CLASS: XII</p>
@@ -33,7 +33,8 @@
                 <p>ROLL NUMBER: 4222420</p>
             </div>
             <div class="study-block">
-                <a class="prev">&#10094;</a>
+                <!-- <button class="prev" data-button="prev">&#10094;</button> -->
+                <a class="prev" onclick="plusSlides(-2)">❮</a>
                 <div class="study-subjects col-sm-9 col-md-5">
                     <span class="glyphicon glyphicon-file"></span>
                     <div>
@@ -69,10 +70,12 @@
                         <p> Congutaion Quiz</p>
                     </div>
                 </div>
-                <a class="next">&#10095;</a>
+                <!-- <button class="next" data-button="next">&#10095;</button> -->
+                
+<a class="next" onclick="plusSlides(2)">❯</a>
             </div>
         </div>
-        <div class="gradebook col-sm-3 col-md-5">
+        <div class="gradebook col-sm-5 col-md-4 col-lg-4">
             <div>
                 <div>In progress <p><h3>5</h3></p></div>
                 <div>Completed <p><h3>0</h3></p></div>
@@ -80,7 +83,7 @@
             </div>
             <a href="#">View Gradebook</a>
         </div>
-        <div class="attendance col-sm-3 col-md-5">
+        <div class="attendance col-sm-5 col-md-4 col-lg-4">
             <span class="glyphicon glyphicon-check"></span>
             <div>
                 <h3>Attendance</h3>
@@ -89,7 +92,68 @@
             </div>
             <a href="#">View Details</a>
         </div>
-        <div class="career-prep col-sm-3 col-md-5">
+        
+    </div>
+    <div class="row">
+        <div class="activities col-sm-4 col-md-7 col-lg-7">
+            <div class="tab">
+                <!-- <button class="tablinks" onclick="displayContent(event, 'upcoming')">UPCOMING</button>
+                <button class="tablinks" onclick="displayContent(event, 'ongoing')">ONGOING</button>
+                <button class="tablinks" onclick="displayContent(event, 'completed')">COMPLETED</button> -->
+                <a class="tablinks" onclick="displayContent(event, 'upcoming')">UPCOMING</a>
+                <a class="tablinks" onclick="displayContent(event, 'upcoming')">ONGOING</a>
+                <a class="tablinks" onclick="displayContent(event, 'upcoming')">COMPLETED</a>
+            </div>
+            <div id="upcoming" class="tabcontent">
+                <p><span class="glyphicon glyphicon-hourglass"></span></p>
+                <p>Stay tuned! We're charting new learning paths for you</p>
+            </div>
+            <div id="ongoing" class="tabcontent">
+                <div class="activity-subjects col-sm-9 col-md-5">
+                    <span class="glyphicon glyphicon-file"></span>
+                    <div>
+                        <p> French </p>
+                        <p> Congutaion Quiz</p>
+                    </div>
+                </div><div class="activity-subjects col-sm-9 col-md-5">
+                    <span class="glyphicon glyphicon-file"></span>
+                    <div>
+                        <p> French </p>
+                        <p> Congutaion Quiz</p>
+                    </div>
+                </div><div class="activity-subjects col-sm-9 col-md-5">
+                    <span class="glyphicon glyphicon-file"></span>
+                    <div>
+                        <p> French </p>
+                        <p> Congutaion Quiz</p>
+                    </div>
+                </div>
+            </div>
+            <div id="completed" class="tabcontent">
+                <div class="activity-subjects col-sm-9 col-md-5">
+                    <span class="glyphicon glyphicon-file"></span>
+                    <div>
+                        <p> Computer Science </p>
+                        <p> For - Loops Problem Statement</p>
+                    </div>
+                </div>
+                <div class="activity-subjects col-sm-9 col-md-5">
+                    <span class="glyphicon glyphicon-file"></span>
+                    <div>
+                        <p> Computer Science </p>
+                        <p> For - Loops Problem Statement</p>
+                    </div>
+                </div>
+                <div class="activity-subjects col-sm-9 col-md-5">
+                    <span class="glyphicon glyphicon-file"></span>
+                    <div>
+                        <p> Computer Science </p>
+                        <p> For - Loops Problem Statement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="career-prep col-sm-5 col-md-4 col-lg-4">
             <div>
                 <span class="glyphicon glyphicon-plane red"></span>
                 <span class="red">EXCELERATE - Career Prep</span>
