@@ -6,6 +6,7 @@
     --blue: #154abd;
     --pink: #feddddf1;
     --red: #c41616;
+    --dark-grey: #c4c3c0;
 }
 header{
     display: flex;
@@ -30,133 +31,14 @@ nav>a{
     cursor: pointer;
     font-size: 18px;
 }
-/* icons */
-.glyphicon{
-    border: 3px solid;
-    border-radius: 5rem;
-    padding: 1.7rem;
-    font-size: 3rem;
+.col-md-11, .col-md-10, .study-subjects {
+    border: 1px solid var(--dark-grey);
+    background-color: var(--white);
 }
-.glyphicon-file{
-    color: var(--orange)
-}
-.glyphicon-play-circle, .glyphicon-check{
-    color: var(--blue);
-}
-.glyphicon-paperclip{
-    color: var(--violet);
-}
-.glyphicon-plane{
-    border: none;
-}
-/* body  */
-main{
-    background-color: var(--light-grey) !important;
-    font-size: 14px;
-}
-.students-info, .study-subjects, .gradebook, .attendance, .career-prep{
-    border: 1px solid black;
-    background-color: var(--white) ;
-}
-.students-info{
-    margin: 1rem 1.5rem;
-}
-.study-subjects{
-    margin: 1rem 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    display: none;
-}
-.gradebook{
-    text-align: center;
-    margin: 1rem;
-}
-.gradebook > div, .attendance{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem 1.5rem;
-}
-.attendance{
-    text-align: left;
-}
-.red{
-    color: var(--red);
-}
-.career-prep{
-    background-color: var(--pink);
-    margin: 1rem 1.5rem;
-}
-.career-prep > div:first-child{
-    display: flex;
-    align-items: center;
-}
-.space-between{
-    display: flex;
-    justify-content: space-between;
-}
-/* progress */
-/* For Chrome or Safari */
-progress::-webkit-progress-bar {
-    background-color: #eeeeee;
+.activities{
+    min-height: 25rem;
 }
 
-progress::-webkit-progress-value {
-    background-color: #039603 !important;
-}
-
-
-/* For Firefox */
-progress {
-    background-color: var(--red);
-}
-progress::-webkit-progress-value{
-    background-color: var(--red);
-}
-progress::-moz-progress-bar {
-    background-color: var(--red) !important;
-}
-
-/* For IE10 */
-progress {
-    background-color: var(--red);
-    width: 100%;
-}
-
-progress {
-    background-color: var(--red);
-}
-
-/* next, prev buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a grey background color */
-  .prev:hover, .next:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  .active{
-    background-color: #717171;
-  }
 footer{
     text-align: center;
 }
