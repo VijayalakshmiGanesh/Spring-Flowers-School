@@ -31,14 +31,22 @@ nav>a{
     cursor: pointer;
     font-size: 18px;
 }
+body{
+    font-size: 17px;
+}
 .col-md-11, .col-md-10, .study-subjects {
     border: 1px solid var(--dark-grey);
     background-color: var(--white);
 }
-.activities{
-    min-height: 25rem;
+.study-subjects{
+    min-height: 4rem;
 }
-
+.activities{
+    min-height: 29rem;
+}
+.career-prep{
+    background-color: var(--pink);
+}
 footer{
     text-align: center;
 }
