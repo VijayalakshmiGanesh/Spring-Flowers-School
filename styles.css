@@ -39,7 +39,7 @@ body{
     background-color: var(--white);
 }
 .study-subjects{
-    min-height: 4rem;
+    height: 5.3rem;
 }
 .activities{
     min-height: 29rem;

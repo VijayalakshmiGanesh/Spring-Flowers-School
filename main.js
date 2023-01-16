@@ -34,7 +34,7 @@ function displayContent(event, tabName) {
       tabcontent[i].classList.add( "d-none");  
     }
     for (let i = 0; i < tablinks.length; i++) {
-      // tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].className = tablinks[i].classList.add("text-decoration-underline");  
     }
     document.querySelector(`#${tabName}`).classList.remove( "d-none"); 
     document.querySelector(`#${tabName}`).classList.add( "d-block");  
