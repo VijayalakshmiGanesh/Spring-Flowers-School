@@ -20,7 +20,11 @@
     height: 7rem;
     width: 20rem;
     object-fit: cover;
-    object-position: 15% 49%;
+    object-position: 16% 49%;
+}
+.hero-banner{
+    height: 35rem;
+    width: 38rem;
 }
 /* nav{
     display: inline !important;
