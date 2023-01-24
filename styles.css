@@ -8,21 +8,21 @@
     --red: #c41616;
     --dark-grey: #c4c3c0;
 }
-header{
+/* header{
     display: flex;
     align-items: center;
     max-height: fit-content;
     min-height: 5rem;
     justify-content: space-around;
     position: sticky;
-}
+} */
 #logo{
     height: 7rem;
     width: 20rem;
     object-fit: cover;
     object-position: 15% 49%;
 }
-nav{
+/* nav{
     display: inline !important;
 }
 nav>a{
@@ -30,7 +30,7 @@ nav>a{
     padding: 0 5px;
     cursor: pointer;
     font-size: 18px;
-}
+} */
 body{
     font-size: 17px;
 }
