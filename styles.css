@@ -17,24 +17,21 @@
     position: sticky;
 } */
 #logo{
-    height: 7rem;
+    height: 7.8rem;
     width: 20rem;
-    object-fit: cover;
-    object-position: 16% 49%;
+    object-fit: contain;
 }
 .hero-banner{
     height: 35rem;
     width: 100%;
 }
-/* nav{
-    display: inline !important;
+.navbar-light .navbar-nav .nav-link{
+     color: #0d6efd !important;
 }
-nav>a{
-    text-decoration: none;
-    padding: 0 5px;
-    cursor: pointer;
-    font-size: 18px;
-} */
+.active, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #1851a7 !important;
+    font-weight: 400;
+}
 body{
     font-size: 17px;
 }
@@ -50,6 +47,9 @@ body{
 }
 .career-prep{
     background-color: var(--pink);
+}
+.boxes{
+    min-width: 5rem;
 }
 footer{
     text-align: center;
