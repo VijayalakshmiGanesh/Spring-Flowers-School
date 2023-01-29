@@ -8,17 +8,9 @@
     --red: #c41616;
     --dark-grey: #c4c3c0;
 }
-/* header{
-    display: flex;
-    align-items: center;
-    max-height: fit-content;
-    min-height: 5rem;
-    justify-content: space-around;
-    position: sticky;
-} */
 #logo{
     height: 7.8rem;
-    width: 20rem;
+    width: 15rem;
     object-fit: contain;
 }
 .hero-banner{
@@ -30,7 +22,7 @@
 }
 .active, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
     color: #1851a7 !important;
-    font-weight: 400;
+    font-weight: 500;
 }
 body{
     font-size: 17px;
@@ -53,4 +45,17 @@ body{
 }
 footer{
     text-align: center;
+}
+@media (max-width: 600px) {
+    #logo {
+        width: 10rem;
+    }
+    .hero-banner {
+        height: 15rem;
+    }
+
+    .boxes div{
+        width: 75%;
+        text-align: center;
+    }
 }
