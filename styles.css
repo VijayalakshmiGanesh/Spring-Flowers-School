@@ -35,7 +35,7 @@ body{
     height: 5.3rem;
 }
 .activities{
-    min-height: 29rem;
+    height: 21rem;
 }
 .career-prep{
     background-color: var(--pink);
