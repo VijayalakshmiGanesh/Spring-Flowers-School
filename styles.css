@@ -17,6 +17,11 @@
     height: 35rem;
     width: 100%;
 }
+.dp{
+    height: 15rem !important;
+    width: 10rem;
+    object-fit: cover;
+}
 .navbar-light .navbar-nav .nav-link{
      color: #0d6efd !important;
 }
@@ -35,7 +40,7 @@ body{
     height: 5.3rem;
 }
 .activities{
-    height: 21rem;
+    height: 19rem;
 }
 .career-prep{
     background-color: var(--pink);
@@ -57,5 +62,13 @@ footer{
     .boxes div{
         width: 75%;
         text-align: center;
+    }
+    .bio-data{
+        flex-direction: column !important;
+    }
+    .dp{
+        height: 10rem !important;
+        width: 8rem;
+        object-fit: cover;
     }
 }
