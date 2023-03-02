@@ -1,10 +1,8 @@
 
-var subjects = document.querySelectorAll(".study-subjects");
-
-var tabcontent = document.querySelectorAll(".tabcontent");
-var tablinks = document.querySelectorAll(".tablinks");
-
-var slideIndex = 1;
+let subjects = document.querySelectorAll(".study-subjects");
+let tabcontent = document.querySelectorAll(".tabcontent");
+let tablinks = document.querySelectorAll(".tablinks");
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -12,7 +10,7 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-  var i;
+  let i;
   if (n > subjects.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = subjects.length}
   for (i = 0; i < subjects.length; i++) {
@@ -41,3 +39,4 @@ function displayContent(event, tabName) {
     // evt.currentTarget.className += " active";
   }
   displayContent(event, 'upcoming')
+
