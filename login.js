@@ -5,6 +5,7 @@ const errorMsg = document.querySelector("#error-msg");
 
 function loginHandler(){
     if(userName.value === "admin" && passWord.value === "admin"){
+        sessionStorage.setItem('username',userName.value)
         window.location.href = "\welcome.html"
     }else{
         console.log("yes")
@@ -12,6 +13,4 @@ function loginHandler(){
         errorMsg.classList.add("d-block")
     }
 }
-
-
 loginBtn.addEventListener("click", loginHandler)
