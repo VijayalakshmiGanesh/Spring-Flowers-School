@@ -39,4 +39,3 @@ function displayContent(event, tabName) {
     // evt.currentTarget.className += " active";
   }
   displayContent(event, 'upcoming')
-
