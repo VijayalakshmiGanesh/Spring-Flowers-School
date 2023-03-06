@@ -183,7 +183,7 @@
                 <p>Students</p>
               </div>
             </div>
-            <div class="activity-list my-5 px-4 py-3 text-center container">
+            <div class="activity-list d-none my-5 px-4 py-3 text-center container">
               <h3>Activity List</h3>
               <div class="card text-center my-3 text-center shadow">
                 <div class="card-header">
@@ -197,17 +197,22 @@
               </div>
               </div>
             </div>
+            <br>
+            <br>
         </div>
       </main>
     <footer class="py-4">© 2023 All rights reserved.</footer>
     <script>
       const activityBody = document.querySelector(".activity-body")
       const studentName = document.querySelector("#student-name");
+      const activitySection = document.querySelector(".activity-list");
       studentName.innerText = sessionStorage.getItem("username");
 
       for(const i in sessionStorage){
         if (sessionStorage.hasOwnProperty(i)) {
           if(i.includes("__Activity__")){
+            activitySection.classList.remove("d-none");
+            activitySection.classList.add("d-block");
             let activityName = i.slice(0, i.length-12)
             activityBody.innerHTML += `<div class="card-body">
                     <h5 class="card-title" id="activity-title">${activityName}</h5>
