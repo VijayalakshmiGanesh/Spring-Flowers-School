@@ -7,14 +7,11 @@ let studentsArr='';
 fetch("data.json").then(response => response.json()).then(data=>studentsArr=data);
 function checkValidStudent(){
     for(let element of studentsArr.students){
-    // console.log(element.username)
         if(userName.value === element.username && passWord.value === element.password){
             flag = true;                
             sessionStorage.setItem('studentID',element.id)
             sessionStorage.setItem('username',element.fullName)
             loginHandler();
-            // break;
-
         }
     }
     

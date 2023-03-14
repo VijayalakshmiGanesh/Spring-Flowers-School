@@ -48,7 +48,6 @@ function fetchStudentData(func){
 
   function profile(){
     const details = data[Number(sessionStorage.getItem("studentID"))-1];
-    console.log(details)
     const name = document.querySelector("#fullName");
     const fathersName = document.querySelector("#fathersName");
     const dob = document.querySelector("#dob");
