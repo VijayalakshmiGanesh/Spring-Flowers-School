@@ -54,7 +54,9 @@ function fetchStudentData(func){
     const dob = document.querySelector("#dob");
     const address = document.querySelector("#address");
     const phone = document.querySelector("#phone");
+    const rollNo = document.querySelector("#rollNum");
 
+    rollNo.innerText = details.rollNum;
     name.innerText = details.fullName;
     fathersName.innerText = details.fatherName;
     dob.innerText = details.dob;
@@ -62,9 +64,58 @@ function fetchStudentData(func){
     phone.innerText = details.phoneNumber;
   }
 
-  function result(){
-    // const marks = JSON.parse(JSON.stringify(result)).students;
-    findMarks(data[Number(sessionStorage.getItem("studentID"))-1].marks[0])
-      // findMarks()
+  function login(){
+    const userName = document.querySelector("#username");
+    const passWord = document.querySelector("#password");
+    const loginBtn = document.querySelector("#submit");
+    const errorMsg = document.querySelector("#error-msg");
+    let flag=false;
+
+    function checkValidStudent(){
+    for(let element of data){
+        if(userName.value === element.username && passWord.value === element.password){
+            flag = true;                
+            sessionStorage.setItem('studentID',element.id)
+            sessionStorage.setItem('username',element.fullName)
+            loginHandler();
+        }
+      }
+    
+    }
+
+    function loginHandler(){
+      if(flag){
+        window.location.href = "\welcome.html"
+      }else{
+        errorMsg.classList.remove("d-none");
+        errorMsg.classList.add("d-block")
+      }
+    }
+    loginBtn.addEventListener("click", checkValidStudent)
   }
-  // displayContent(event, 'upcoming')
+
+  function result(){
+    const subject_section = document.querySelector(".subjects-section")
+    const dropdown = document.querySelector("#subject-dropdown");
+    const marks = document.querySelector("#marks");
+    const grade = document.querySelector("#grade");
+    const subject_name = document.querySelector("#subject")
+
+    const findMarks = (marks,subjectName) => marks[subjectName]
+    function findGrades(mark) {
+      if (mark === 100) return 'Exemplary';
+      else if (mark < 100 && mark >= 80) return 'First class with Distinction';
+      else if (mark < 80 && mark >= 65) return 'First class';
+      else if (mark < 65 && mark >= 50) return 'Average';
+      else if (mark < 50) return 'Arrear - Reappear';
+    }
+    dropdown.addEventListener("change", () => {
+      var value = dropdown.options[dropdown.selectedIndex].value;
+      subject_section.classList.add("d-block");
+      subject_name.innerText = value;
+      const findMark = findMarks(data[Number(sessionStorage.getItem("studentID"))-1].marks[0], value);
+      marks.innerText = findMark;
+      grade.innerText = findGrades(findMark);
+    })
+    
+  }
