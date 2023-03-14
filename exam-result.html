@@ -91,7 +91,9 @@
     </main>
     <footer class="py-4">© 2023 All rights reserved.</footer>
     <script src="results.js"></script>
+    <script src="main.js"></script>
     <script>
+      fetchStudentData(result);
       var studentName = document.querySelector("#student-name");
       studentName.innerText = sessionStorage.getItem("username")
     </script>
