@@ -54,6 +54,7 @@ function fetchStudentData(func){
     const address = document.querySelector("#address");
     const phone = document.querySelector("#phone");
     const rollNo = document.querySelector("#rollNum");
+    const displayPic = document.querySelector(".dp");
 
     rollNo.innerText = details.rollNum;
     name.innerText = details.fullName;
@@ -61,6 +62,7 @@ function fetchStudentData(func){
     dob.innerText = details.dob;
     address.innerText = details.Address;
     phone.innerText = details.phoneNumber;
+    displayPic.src = details.profilePath;
   }
 
   function login(){

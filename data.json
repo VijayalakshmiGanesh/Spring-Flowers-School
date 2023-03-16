@@ -11,6 +11,7 @@
             "gender": "Female",
             "Address": "28, Flower Bazaar, Bangalore, India - 565005",
             "phoneNumber": "90010 8001",
+            "profilePath": "\\assests\\dp.jpg",
             "marks":[
                 {
                     "English": 75,
@@ -33,6 +34,7 @@
             "gender": "Female",
             "Address": "187/21A, Oak Ridge Apartments, Bayhill Avenue, Bangalore, India - 789200",
             "phoneNumber": "99852 12345",
+            "profilePath": "\\assests\\dp1.jpg",
             "marks":[
                 {
                     "English": 99,
@@ -55,6 +57,7 @@
             "gender": "Female",
             "Address": "75B, Blue Sky, Grapeland Street Circle, Mumbai, India - 452017",
             "phoneNumber": "90000 40001",
+            "profilePath": "\\assests\\dp2.jpg",
             "marks":[
                 {
                     "English": 86,
